@@ -42,7 +42,7 @@ export default function Signup() {
 
   const mutation = useMutation({
     mutationFn: async (data) => {
-      const res = await fetch("https://borrower-delta.vercel.app/api/signup", {
+      const res = await fetch("https://borrower-api.vercel.app/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
